@@ -69,6 +69,9 @@
 
 #endif
 
+// MySupplyLive
+#import <Parse/PFObject+MSL.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C9432A82167FE440010FAE6 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C94329F2167FE430010FAE6 /* PFObject+MSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C9432A92167FE440010FAE6 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C94329F2167FE430010FAE6 /* PFObject+MSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C9432AA2167FE440010FAE6 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C94329F2167FE430010FAE6 /* PFObject+MSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C9432AB2167FE440010FAE6 /* PFObject+MSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9432A02167FE430010FAE6 /* PFObject+MSL.m */; };
+		0C9432AC2167FE440010FAE6 /* PFObject+MSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9432A02167FE430010FAE6 /* PFObject+MSL.m */; };
+		0C9432AD2167FE440010FAE6 /* PFObject+MSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9432A02167FE430010FAE6 /* PFObject+MSL.m */; };
 		4030936B1C81F0B200CF09F8 /* PFQueryConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 403093691C81F0B200CF09F8 /* PFQueryConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4030936C1C81F0B200CF09F8 /* PFQueryConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 403093691C81F0B200CF09F8 /* PFQueryConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4030936D1C81F0B200CF09F8 /* PFQueryConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 403093691C81F0B200CF09F8 /* PFQueryConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -2932,6 +2938,8 @@
 		09EEA12D1434FB1F00E3A3FA /* Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Parse.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		09EEA12E1434FB1F00E3A3FA /* Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parse.m; sourceTree = "<group>"; };
 		09EEA1351435143500E3A3FA /* ParseInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseInternal.h; sourceTree = "<group>"; };
+		0C94329F2167FE430010FAE6 /* PFObject+MSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+MSL.h"; sourceTree = "<group>"; };
+		0C9432A02167FE430010FAE6 /* PFObject+MSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFObject+MSL.m"; sourceTree = "<group>"; };
 		2FE3E9E9147B383200445083 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		403093691C81F0B200CF09F8 /* PFQueryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFQueryConstants.h; sourceTree = "<group>"; };
 		4030936A1C81F0B200CF09F8 /* PFQueryConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFQueryConstants.m; sourceTree = "<group>"; };
@@ -3813,6 +3821,7 @@
 		09D3363F139C54930098E916 = {
 			isa = PBXGroup;
 			children = (
+				0C94329D2167FE430010FAE6 /* MySupplyLive */,
 				F55ABB501B4F39DA00A0ECD5 /* Configurations */,
 				0925ABB613D791770095FEFA /* Parse */,
 				099C082113AC013900D71869 /* Tests */,
@@ -3871,6 +3880,23 @@
 				813E97A91A26A76A00373BA7 /* System Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C94329D2167FE430010FAE6 /* MySupplyLive */ = {
+			isa = PBXGroup;
+			children = (
+				0C94329E2167FE430010FAE6 /* Categories */,
+			);
+			path = MySupplyLive;
+			sourceTree = "<group>";
+		};
+		0C94329E2167FE430010FAE6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0C94329F2167FE430010FAE6 /* PFObject+MSL.h */,
+				0C9432A02167FE430010FAE6 /* PFObject+MSL.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		497DBE85155459CE004EC871 /* Views */ = {
@@ -5734,6 +5760,7 @@
 				81C1EE491AE1EF960031C438 /* PFWeakValue.h in Headers */,
 				8166FCB41B503886003841A2 /* PFOfflineStore.h in Headers */,
 				81329E8E1AE1E8840071EE3E /* PFReachability.h in Headers */,
+				0C9432A82167FE440010FAE6 /* PFObject+MSL.h in Headers */,
 				81C7F4AC1AF42BD9007B5418 /* PFMutableQueryState.h in Headers */,
 				81CB7F991B17970400DC601D /* PFPushState_Private.h in Headers */,
 				81C7F4A21AF4220A007B5418 /* PFMutableFileState.h in Headers */,
@@ -5961,6 +5988,7 @@
 				81C583E41C3B0A98000063C6 /* PFReachability.h in Headers */,
 				81C583E61C3B0A98000063C6 /* PFMutableQueryState.h in Headers */,
 				81C583E81C3B0A98000063C6 /* PFPushState_Private.h in Headers */,
+				0C9432A92167FE440010FAE6 /* PFObject+MSL.h in Headers */,
 				81C583E91C3B0A98000063C6 /* PFMutableFileState.h in Headers */,
 				81C583EA1C3B0A98000063C6 /* PFSessionUtilities.h in Headers */,
 				81C583EC1C3B0A98000063C6 /* PFLogger.h in Headers */,
@@ -6603,6 +6631,7 @@
 				81443B341A27838500F3FD17 /* PFDevice.h in Headers */,
 				81C7F4A31AF4220A007B5418 /* PFMutableFileState.h in Headers */,
 				815E764E1BDF168A00E1DF8E /* PFPersistenceController.h in Headers */,
+				0C9432AA2167FE440010FAE6 /* PFObject+MSL.h in Headers */,
 				810B7D771A0291FF003C0909 /* PFMacros.h in Headers */,
 				81C6BDEF1B4DB16500553A83 /* PFInstallationConstants.h in Headers */,
 				F51535061B57240900C49F56 /* PFACLState.h in Headers */,
@@ -7940,6 +7969,7 @@
 				8166FCEA1B504083003841A2 /* PFPushManager.m in Sources */,
 				8166FCB61B503886003841A2 /* PFOfflineStore.m in Sources */,
 				702F3A0B1F1179D40043DD72 /* PFPolygon.m in Sources */,
+				0C9432AB2167FE440010FAE6 /* PFObject+MSL.m in Sources */,
 				8166FCBE1B503886003841A2 /* PFSQLiteDatabase.m in Sources */,
 				81C3824919CCAD2C0066284A /* PFProduct.m in Sources */,
 				81C3823F19CCAD2C0066284A /* Parse.m in Sources */,
@@ -8102,6 +8132,7 @@
 				81C583721C3B0A98000063C6 /* PFPushManager.m in Sources */,
 				81C583731C3B0A98000063C6 /* PFOfflineStore.m in Sources */,
 				81C583741C3B0A98000063C6 /* PFSQLiteDatabase.m in Sources */,
+				0C9432AC2167FE440010FAE6 /* PFObject+MSL.m in Sources */,
 				81C583751C3B0A98000063C6 /* PFProduct.m in Sources */,
 				81C583761C3B0A98000063C6 /* Parse.m in Sources */,
 				81C583771C3B0A98000063C6 /* PFErrorUtilities.m in Sources */,
@@ -8505,6 +8536,7 @@
 				81EB6637198A7FA600851598 /* PFConfig.m in Sources */,
 				8166FCC71B503886003841A2 /* PFSQLiteStatement.m in Sources */,
 				81C76EEC1B4B218C0031C2FD /* PFObjectConstants.m in Sources */,
+				0C9432AD2167FE440010FAE6 /* PFObject+MSL.m in Sources */,
 				814B64141A769EF500213055 /* PFLogger.m in Sources */,
 				F5E8DE1C1B29100000EEA594 /* PFRelationState.m in Sources */,
 				815619031A1F79AC0076504A /* PFDateFormatter.m in Sources */,
