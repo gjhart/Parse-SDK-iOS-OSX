@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CAF82D223FB35A00040B5D7 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAF82CC23FB35A00040B5D7 /* PFObject+MSL.h */; };
-		0CAF82D323FB35A00040B5D7 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAF82CC23FB35A00040B5D7 /* PFObject+MSL.h */; };
-		0CAF82D423FB35A00040B5D7 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAF82CC23FB35A00040B5D7 /* PFObject+MSL.h */; };
+		0CAF82D223FB35A00040B5D7 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAF82CC23FB35A00040B5D7 /* PFObject+MSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CAF82D323FB35A00040B5D7 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAF82CC23FB35A00040B5D7 /* PFObject+MSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CAF82D423FB35A00040B5D7 /* PFObject+MSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAF82CC23FB35A00040B5D7 /* PFObject+MSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CAF82D523FB35A00040B5D7 /* PFObject+MSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF82CD23FB35A00040B5D7 /* PFObject+MSL.m */; };
 		0CAF82D623FB35A00040B5D7 /* PFObject+MSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF82CD23FB35A00040B5D7 /* PFObject+MSL.m */; };
 		0CAF82D723FB35A00040B5D7 /* PFObject+MSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF82CD23FB35A00040B5D7 /* PFObject+MSL.m */; };
