@@ -15,8 +15,8 @@ build_folder = File.join(script_folder, 'build')
 release_folder = File.join(build_folder, 'release')
 bolts_build_folder = File.join(script_folder, 'Carthage', 'Build')
 bolts_folder = File.join(script_folder, 'Carthage', 'Checkouts', 'Bolts-ObjC')
-ios_simulator = "\"platform=iOS Simulator,name=iPhone 11,OS=13.2.2\""
-tvos_simulator = "\"platform=tvOS Simulator,name=Apple TV 4K,OS=13.2.2\""
+ios_simulator = 'platform="iOS Simulator",name="iPhone 11"'
+tvos_simulator = 'platform="tvOS Simulator",name="Apple TV 4K"'
 
 module Constants
   require 'plist'
@@ -499,7 +499,7 @@ namespace :test do
       t.formatter = XCTask::BuildFormatter::XCPRETTY
     end
     unless task.execute
-      puts 'OS X Tests Failed!'
+      puts 'macOS Tests Failed!'
       exit(1)
     end
   end
@@ -550,7 +550,7 @@ namespace :test do
 
       result = task.execute
       unless result
-        puts 'Failed to build iOS FacebookUtils Framework.'
+        puts 'Failed to build iOS TwitterUtils Framework.'
         exit(1)
       end
     end
@@ -572,7 +572,7 @@ namespace :test do
         t.destinations = [ios_simulator]
         t.configuration = 'Debug'
 
-        t.actions = [XCTask::BuildAction::CLEAN, XCTask::BuildAction::BUILD]
+        t.actions = [XCTask::BuildAction::TEST]
         t.formatter = XCTask::BuildFormatter::XCPRETTY
       end
 
@@ -713,7 +713,7 @@ namespace :test do
     system("pod repo update --silent")
     podspecs.each do |podspec|
       results << system("pod lib lint #{podspec} --allow-warnings")
-      results << system("pod lib lint #{podspec} --allow-warnings --use-libraries")
+      results << system("pod lib lint #{podspec} --allow-warnings --use-libraries --use-modular-headers")
     end
     results.each do |result|
       unless result

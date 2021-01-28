@@ -14,6 +14,7 @@
 #import "PFPin.h"
 #import "PFPinningObjectStore.h"
 #import "PFUnitTestCase.h"
+#import "Parse.h"
 
 @interface PinningObjectStoreTests : PFUnitTestCase
 
@@ -38,8 +39,7 @@
 
 - (void)setUp
 {
-    [PFPin registerSubclass];
-
+    [Parse enableLocalDatastore];
     [super setUp];
 }
 
